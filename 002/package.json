@@ -1,0 +1,27 @@
+{
+  "name": "web3-002",
+  "version": "1.0.0",
+  "description": "web3 learning course 002",
+  "main": "index.html",
+  "type": "commonjs",
+  "dependencies": {
+    "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "browserify": "^17.0.0"
+  },
+  "scripts": {
+    "start": "browserify src/main.js -o dist/bundle.js && browser-sync start --config bs-config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Qin",
+  "license": "ISC",
+  "compilerOptions": {
+    "include": [
+      "node_modules"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  }
+}

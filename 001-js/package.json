@@ -1,0 +1,29 @@
+{
+  "name": "web3-001",
+  "version": "1.0.0",
+  "description": "web3 learning course 001",
+  "main": "index.html",
+  "type": "commonjs",
+  "dependencies": {
+    "source-map-loader": "^3.0.0",
+    "ts-loader": "^9.2.6",
+    "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "http-server": "^14.0.0"
+  },
+  "scripts": {
+    "start": "browserify src/main.js -o dist/bundle.js && http-server -a localhost -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Qin",
+  "license": "ISC",
+  "compilerOptions": {
+    "include": [
+      "node_modules"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  }
+}
